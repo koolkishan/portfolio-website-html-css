@@ -1,0 +1,36 @@
+.contact {
+  display: flex;
+  margin: 4rem 20rem;
+  gap: 3rem;
+  .left {
+    .title {
+      .bar {
+        height: 0.5rem;
+        width: 5rem;
+        background: var(--gradient);
+        margin-bottom: 1rem;
+      }
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 2rem 0;
+      gap: 1rem;
+      input {
+        padding: 0.8rem 9rem 0.8rem 1rem;
+        background-color: transparent;
+        border: 1px solid rgb(129, 128, 128);
+        color: white;
+      }
+    }
+  }
+  .right {
+    img {
+      height: 30rem;
+      width: 26rem;
+      object-fit: cover;
+    }
+  }
+}

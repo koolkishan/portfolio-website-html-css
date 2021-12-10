@@ -1,0 +1,85 @@
+.gradient {
+  background: var(--gradient);
+}
+
+button {
+  color: white;
+  padding: 1rem 1.8rem;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: solid 4px transparent;
+  cursor: pointer;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(to right, #dce35b, #45b649);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #0b0b0b inset;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6rem;
+  text-align: center;
+  h2 {
+    color: white;
+  }
+  p {
+    color: rgb(153, 153, 153);
+  }
+}
+
+.spring {
+  display: flex;
+  align-items: center;
+  margin: 6rem 0;
+  .coil {
+    border-top: white dashed 0.01rem;
+    width: 49.75%;
+  }
+  .bar {
+    width: 0.5%;
+    height: 7rem;
+  }
+}
+.spring.right {
+  flex-direction: row-reverse;
+}
+
+.design {
+  position: relative;
+  .background {
+    height: 10rem;
+    width: 12rem;
+    background: linear-gradient(to right, #c5e35b, #45b649);
+    position: absolute;
+    z-index: -1;
+    left: -10px;
+    top: -8px;
+  }
+}
+.right {
+  .background {
+    top: auto;
+    left: auto;
+    right: -10px;
+    bottom: -8px;
+  }
+}
+
+.defaultMargin {
+  margin: 0 14rem;
+}
+
+h3 {
+  color: white;
+}
+p {
+  color: rgb(129, 128, 128);
+}

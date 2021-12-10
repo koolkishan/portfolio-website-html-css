@@ -1,0 +1,70 @@
+.skills {
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+}
+
+.circular {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  .inner {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background: #0b0b0b;
+    border-radius: 100%;
+  }
+  .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(153, 153, 153);
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  .bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--gradient);
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+    transform: rotate(250deg);
+  }
+}
+
+.three {
+  .bar {
+    clip: rect(40px, 100px, 100px, 30px);
+  }
+}
+
+.two {
+  .bar {
+    clip: unset;
+  }
+}
+
+.four {
+  .bar {
+    clip: unset;
+  }
+}

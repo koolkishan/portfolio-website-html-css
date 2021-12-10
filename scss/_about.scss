@@ -1,0 +1,24 @@
+.about {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .image {
+      img {
+        height: 25rem;
+        width: 50rem;
+        object-fit: cover;
+      }
+    }
+    .play {
+      position: absolute;
+      top: 30%;
+      cursor: pointer;
+      i {
+        @include gradientText;
+        font-size: 10rem;
+      }
+    }
+  }
+}

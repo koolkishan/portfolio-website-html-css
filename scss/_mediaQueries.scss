@@ -1,0 +1,129 @@
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  body {
+    overflow-x: hidden;
+  }
+  .defaultMargin {
+    margin: 0 10vw;
+  }
+  .navbar {
+    .brand__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+      .toggle {
+        display: block;
+      }
+    }
+    .links {
+      display: none;
+    }
+  }
+
+  .hero {
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 2rem;
+    .content {
+      align-items: center;
+      .title {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+    .image {
+      position: initial;
+      img {
+        position: initial;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .about {
+    margin: 0 10vw;
+    img {
+      width: 100% !important;
+    }
+  }
+
+  .skills {
+    .content {
+      flex-direction: column;
+    }
+    .skill {
+    }
+  }
+
+  .portfolio {
+    .container {
+      grid-template-columns: 1fr;
+      .portfolio__container {
+        padding: 1rem;
+        .image {
+          width: 200px;
+          img {
+            &:hover {
+              top: -240% !important;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          .image {
+            img {
+              &:hover {
+                top: -260%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .services {
+    .container {
+      grid-template-columns: 1fr;
+      .service {
+      }
+    }
+  }
+  .languages {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .contact {
+    flex-direction: column;
+    margin: 2rem 10vw;
+    gap: 5vw;
+    .left {
+      .form {
+        input {
+          padding-right: 10vw;
+        }
+      }
+    }
+    .right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    padding: 5vw 10vw;
+    grid-template-columns: 1fr;
+    gap: 10vw;
+  }
+  .lower__footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 5vw;
+    gap: 1rem;
+  }
+}
